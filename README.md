@@ -11,10 +11,51 @@
 
 ### プロジェクト構成
 ```
+.
+├── .venv               # 仮想環境のディレクトリです。
+├── .gitignore          # このリポジトリで使用しているファイルの一覧です。
+├── .python-version     # このリポジトリで使用しているPythonのバージョンです。
+├── main.py             # プログラムのメインファイルです。
+├── README.md           # このファイルはこのリポジトリのREADME.mdです。
+└── requirements.txt    # このリポジトリで使用しているライブラリの一覧です。
 ```
 
 ## 2. 実行手順
 このツールを使用するためには、以下の手順に従ってください。
+
+### 2.0 リポジトリのクローン
+1. リポジトリをクローンします。
+
+    ```bash
+    git clone https://github.com/yamato-snow/python_testproject_venv.git　<プロジェクト名>
+    ```
+2. クローンしたリポジトリに移動します。
+
+3. 編集用のブランチを作成します。
+
+    ```bash
+    git branch <ブランチ名>
+    ```
+
+4. ブランチを切り替えます。
+
+    ```bash
+    git checkout <ブランチ名>
+    ```
+
+5. プロジェクトを編集します。
+
+6. 編集したプロジェクトをコミットします。
+
+    ```bash
+    git commit -m "<コミットメッセージ>"
+    ```
+
+7. プロジェクトをプッシュします。
+
+    ```bash
+    git push origin <ブランチ名>
+    ```
 
 ### 2.1. 環境構築
 1. 初回の設定（2回目以降の実行時はこの手順は不要です。）
@@ -49,14 +90,15 @@
     ```
 
 3. 仮想環境内のpipをアップデート（1回目のみ実行してください）
+
     ```bash
-    pip install --upgrade pip
+    python -m pip install --upgrade pip
     ```
 
 4. 必要なPythonライブラリのインストール（1回目のみ実行してください）
 
     ```bash
-    pip install -r requirements.txt
+    python -m pip install -r requirements.txt
     ```
 
 ### 2.2. プログラムの実行
